@@ -1,0 +1,19 @@
+Process
+code, data & state information
+independent
+there can be 100s of processes and os manages them
+
+Thread
+subset of process
+a process can have multiple threads
+light weight less overhead to create & terminate
+os can switch b/w threads faster than processes
+
+a java application runs in one process and can spin up multiple threads
+each java app executes in its own instance of the JVM
+each JVM instance is a separate independent process
+
+by default java app takes 1 core and that is main thread
+
+concurrency: it appears threads are running in parallel but only 1 thread can execute at a gievn time
+Parallelism: it means using multi cores and multiple threads running at same time
