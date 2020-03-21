@@ -17,3 +17,20 @@ by default java app takes 1 core and that is main thread
 
 concurrency: it appears threads are running in parallel but only 1 thread can execute at a gievn time
 Parallelism: it means using multi cores and multiple threads running at same time
+
+-----------------------------------------------UDEMY-------------------------------------------------------
+Concurrrency
+Parallelism
+
+OS
+Disk/Hardrive -> All our applications reside in the hard drive just like a file(Text Editor, Web Browser)
+Memory -> when user runs an application os takes the progrsm & creates an instance of application in RAM
+this instance is called a process and is isolated from any other process
+Process (Context) 
+PID -> process ID
+Files -> application opens for reading & writing
+Heap -> for storing the data
+code -> program instructions to be executed on CPU
+Main Thread -> has a stack & instruction pointer
+in a multi threaded application each thread comes with its own stack & instruction pointer all of the rest are shared
+stack -> stores local variables & passed into functions
