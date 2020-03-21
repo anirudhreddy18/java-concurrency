@@ -19,8 +19,8 @@ concurrency: it appears threads are running in parallel but only 1 thread can ex
 Parallelism: it means using multi cores and multiple threads running at same time
 
 -----------------------------------------------UDEMY-------------------------------------------------------
-Concurrrency
-Parallelism
+Concurrrency -- Responsiveness
+Parallelism. --- Performance
 
 OS
 Disk/Hardrive -> All our applications reside in the hard drive just like a file(Text Editor, Web Browser)
@@ -34,3 +34,27 @@ code -> program instructions to be executed on CPU
 Main Thread -> has a stack & instruction pointer
 in a multi threaded application each thread comes with its own stack & instruction pointer all of the rest are shared
 stack -> stores local variables & passed into functions
+instruction pointer -> Address of next instruction to execute
+
+Context Switch
+Each process is independent
+and each process has many threads
+stop thread 1
+schedule thread 1 out
+schedule thread2
+start thread2
+its not cheap and is the price of multitasking (concurrency)
+Each Thread consumes resoucres in the CPU & memory
+switching involves stotring data for 1 thread and restorign data for another thread
+too many threads causes decreases perdformance
+threads consumes less resources than processes. context switching b/w 2 threads in same process in cheaper than from threads in different processes
+Thread share a lot of data
+
+Threads Scheduling 
+depends on OS
+we cannot control this 
+
+Threads vs processes
+prefer if tasks share a lot of data
+threads are much faster to create & destroy
+swithcing b/w threads in process is cheaper than switching b/w multiple processes
