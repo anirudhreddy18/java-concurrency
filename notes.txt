@@ -58,3 +58,20 @@ Threads vs processes
 prefer if tasks share a lot of data
 threads are much faster to create & destroy
 swithcing b/w threads in process is cheaper than switching b/w multiple processes
+
+to prevent a thread from blocking our app from exiting we set the thread to be Daemon thread
+Threads always run independently
+order of execution is out of control can be sequential, concurrent, parallel
+
+Thread.Join() waits for all threads to be done
+
+Performance
+Latency -> time taken to complete a task
+Throughput -> amount of tasks completed in a given period
+
+running subtasks in parallel to increase latency and running them on diffrenet cores
+os will do best to scheudle them to different core to make max use of hardware
+
+no of threads = no of cores is optimal only if all threads are runnable and can run without interruption(no io/ blocking/sleep calls)
+assumption of nothig else that consumes lot of CPU (for ex a dedicated server)
+hyperthreading -> each physical core can run 2 threads can parallel
