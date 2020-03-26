@@ -100,11 +100,26 @@ if no call is blocking always execute no of threads = number of cores to achieve
 if there is blocking call like DB always execute no of threads > number of cores to achieve max throughput since most of thread are going to be idle waiting response from DB.
 
 Stack
+local primitive types and local references
 all variables belong to thread executing on stack
 statically allocated whrn thread is created
 stack size is fixed and relatively small
 calling hierarchy is too deep may get stack overflow exception (recursion)
 
 Heap
-all threads has access to heap memory and share them
+all threads has access to heap memory and share them and allocate 
 objects(strings , collections etc anything with new operator), members of classes, static variables
+Managed by GC
+Members of classes exist as long as their parent objects exist
+static varibles forever entire lifecycle
+
+References vs Objects
+Object referencevar1 = new Object();
+Object referencevar2 = referencevar1; // they are asigned same address
+
+References
+can be allocated on stack
+can be allocated on heap if they are members of class
+
+objects
+Always allocated on heap
