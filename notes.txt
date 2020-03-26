@@ -98,3 +98,13 @@ where as throughput = number of requests/time taken to get response
 
 if no call is blocking always execute no of threads = number of cores to achieve max throughput
 if there is blocking call like DB always execute no of threads > number of cores to achieve max throughput since most of thread are going to be idle waiting response from DB.
+
+Stack
+all variables belong to thread executing on stack
+statically allocated whrn thread is created
+stack size is fixed and relatively small
+calling hierarchy is too deep may get stack overflow exception (recursion)
+
+Heap
+all threads has access to heap memory and share them
+objects(strings , collections etc anything with new operator), members of classes, static variables
