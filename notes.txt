@@ -64,6 +64,7 @@ Threads always run independently
 order of execution is out of control can be sequential, concurrent, parallel
 
 Thread.Join() waits for all threads to be done
+thread1.join() waits for the thread to complete
 
 Performance
 Latency -> time taken to complete a task
@@ -123,3 +124,7 @@ can be allocated on heap if they are members of class
 
 objects
 Always allocated on heap
+
+Resource sharing between threads
+
+Atomic operation
