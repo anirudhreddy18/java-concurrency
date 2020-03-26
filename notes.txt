@@ -92,3 +92,9 @@ if all the threads are busy in the pool tasks will be waiting in the queue until
 not trivial
 JDK comes only with a few implementations
 fixed thread poolexecutor
+
+For a http request time taken to get a response after a request is made is called latency
+where as throughput = number of requests/time taken to get response
+
+if no call is blocking always execute no of threads = number of cores to achieve max throughput
+if there is blocking call like DB always execute no of threads > number of cores to achieve max throughput since most of thread are going to be idle waiting response from DB.
