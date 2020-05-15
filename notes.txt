@@ -151,5 +151,5 @@ spring uses scheduled executor in java similar to Task Scheduler and @scheduled 
 
 Async programming achieved in 3 wasy
 use java executors
-spring async
+spring async with java taskexecutor bean / completable future with java executor bean.
 completable future
