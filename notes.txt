@@ -146,3 +146,5 @@ spring recommends using @aysnc and return completable future.
 you can use async with taskExecutor and @Aysnc("customExecutor") and declare executor as a bean.
 @Aysnc -> default uses simpleasynctaskExecutor which creates a new thread.
 use with ThreadPoolTaskExecutor(most of time) or ConcurrencyExecutor.
+spring uses async with task executor similar to java executors
+spring uses scheduled executor in java similar to Task Scheduler and @scheduled annotation.
