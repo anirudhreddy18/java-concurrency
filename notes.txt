@@ -128,3 +128,21 @@ Always allocated on heap
 Resource sharing between threads
 
 Atomic operation
+
+java Threads
+threads are more error prone and should not be used directly. java recommends using executors
+
+Executors
+you can create executors such with a thread pool of size 1, or n.
+executors can take a task and run it with mehthods such as execute, submit
+runnable -> runs a task and returns void response
+callable -> runs a task and returns a future.
+so something like future = executor.submit(callable)
+and block requests with future.get() and also can cancel future future.cancel(true);
+exe.shutdown() to shutdown executor.
+
+using executors in spring
+spring recommends using @aysnc and return completable future.
+you can use async with taskExecutor and @Aysnc("customExecutor") and declare executor as a bean.
+@Aysnc -> default uses simpleasynctaskExecutor which creates a new thread.
+use with ThreadPoolTaskExecutor(most of time) or ConcurrencyExecutor.
