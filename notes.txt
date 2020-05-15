@@ -149,7 +149,8 @@ use with ThreadPoolTaskExecutor(most of time) or ConcurrencyExecutor.
 spring uses async with task executor similar to java executors
 spring uses scheduled executor in java similar to Task Scheduler and @scheduled annotation.
 
-Async programming achieved in 3 wasy
-use java executors
-spring async with java taskexecutor bean / completable future with java executor bean.
-completable future
+Async programming achieved in 3 ways
+use java executors(dont use much).
+declare a task executor and use it with @async.
+delcare a taskscheduler bean with new thread pool and use it with fixed rate.
+declare a task executor and use it with completable future.
