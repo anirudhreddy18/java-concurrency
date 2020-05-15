@@ -148,3 +148,8 @@ you can use async with taskExecutor and @Aysnc("customExecutor") and declare exe
 use with ThreadPoolTaskExecutor(most of time) or ConcurrencyExecutor.
 spring uses async with task executor similar to java executors
 spring uses scheduled executor in java similar to Task Scheduler and @scheduled annotation.
+
+Async programming achieved in 3 wasy
+use java executors
+spring async
+completable future
